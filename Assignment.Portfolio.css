@@ -1,0 +1,44 @@
+*{
+	width: 1000px;
+}
+
+#container{
+	width: 1000px;
+	background: grey;
+}
+
+#intro{
+	padding: 5px 5px 5px 5px;
+}
+
+#intro{
+	display: inline-block;
+	width: 510px;
+}
+
+#intro h1{
+	display: inline-block;
+	width: 450px;
+	text-align: center;
+}
+
+#intro p{
+	display: block;
+	width: 500px;
+	margin: 0px;
+	margin-right: 0px;
+}
+
+img{
+	display: inline-block;
+	width: 450px;
+	height: 300px;
+	vertical-align: top;
+	margin-bottom: 40px;
+	margin-top: 30px;
+}
+
+#mylinks{
+	border-top: 2px solid white;
+	padding-bottom: 20px;
+}
