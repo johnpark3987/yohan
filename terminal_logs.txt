@@ -1,0 +1,50 @@
+Last login: Wed Sep 28 13:28:25 on ttys000
+Johns-MacBook-Pro:~ johnpark$ https://github.com/johnpark3987/yohan.git
+-bash: https://github.com/johnpark3987/yohan.git: No such file or directory
+Johns-MacBook-Pro:~ johnpark$ cd desktop
+Johns-MacBook-Pro:desktop johnpark$ git remote show
+Johns-MacBook-Pro:desktop johnpark$ git remote show
+Johns-MacBook-Pro:desktop johnpark$ git clone https://github.com/johnpark3987/yohan.git
+Cloning into 'yohan'...
+remote: Counting objects: 7, done.
+remote: Compressing objects: 100% (4/4), done.
+remote: Total 7 (delta 1), reused 0 (delta 0), pack-reused 0
+Unpacking objects: 100% (7/7), done.
+Checking connectivity... done.
+Johns-MacBook-Pro:desktop johnpark$ git remote show
+Johns-MacBook-Pro:desktop johnpark$ cd yohan
+Johns-MacBook-Pro:yohan johnpark$ git remote add john https://github.com/johnpark3987/yohan.git
+Johns-MacBook-Pro:yohan johnpark$ git remote show
+john
+origin
+Johns-MacBook-Pro:yohan johnpark$ git remote remove john
+Johns-MacBook-Pro:yohan johnpark$ git remote show
+origin
+Johns-MacBook-Pro:yohan johnpark$ git pull origin master
+From https://github.com/johnpark3987/yohan
+ * branch            master     -> FETCH_HEAD
+Already up-to-date.
+Johns-MacBook-Pro:yohan johnpark$ git add .
+Johns-MacBook-Pro:yohan johnpark$ git status
+On branch master
+Your branch is up-to-date with 'origin/master'.
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+	new file:   Assignment.Portfolio.css
+	new file:   Assignment.Portfolio.html
+
+Johns-MacBook-Pro:yohan johnpark$ git commit -m "first clone commit"
+[master 2ec781c] first clone commit
+ 2 files changed, 70 insertions(+)
+ create mode 100644 Assignment.Portfolio.css
+ create mode 100644 Assignment.Portfolio.html
+Johns-MacBook-Pro:yohan johnpark$ git push origin master
+Counting objects: 4, done.
+Delta compression using up to 2 threads.
+Compressing objects: 100% (4/4), done.
+Writing objects: 100% (4/4), 871 bytes | 0 bytes/s, done.
+Total 4 (delta 0), reused 0 (delta 0)
+To https://github.com/johnpark3987/yohan.git
+   728bc1b..2ec781c  master -> master
+Johns-MacBook-Pro:yohan johnpark$ 
